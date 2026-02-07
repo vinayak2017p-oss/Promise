@@ -8,7 +8,7 @@
     body {
       background: linear-gradient(to bottom, #ff758c, #ff7eb3);
       text-align: center;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       color: white;
       padding-top: 50px;
     }
@@ -31,12 +31,8 @@
     }
 
     img {
-      width: 120px;
-      margin: 10px;
-    }
-
-    h2 {
-      margin-bottom: 10px;
+      width: 110px;
+      margin: 8px;
     }
 
     button {
@@ -54,12 +50,13 @@
 <body>
 
   <!-- 🎵 Background Music -->
-  <audio autoplay loop>
+  <audio id="bgMusic" loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
   </audio>
 
   <div class="card">
-    🐶💖
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=300" alt="Cute Dog">
+
     <h2>My Promise To Tannu 💍</h2>
 
     <p>
@@ -67,8 +64,8 @@
       Har din, har pal, meri zarurat ban jaayegi tu 💍❤️”
     </p>
 
-    <img src="https://i.imgur.com/Qp8YJ8U.png" alt="Rose">
-    <img src="https://i.imgur.com/0XKzn9E.png" alt="Heart">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Red_rose.jpg/320px-Red_rose.jpg" alt="Rose">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/240px-Love_Heart_SVG.svg.png" alt="Heart">
 
     <br><br>
 
@@ -77,7 +74,13 @@
 
   <script>
     function showPromise() {
-      alert("Tannu ❤️\nMain wada karta hoon,\nhar din, har pal\nsirf tumhara saath nibhaunga 💍🌹");
+      document.getElementById("bgMusic").play();
+      alert(
+        "Main wada karta hoon muskuraane ka sabab banunga,\n" +
+        "Tere aansuon ka nahi,\n" +
+        "Promise Day par bas itna kehna hai,\n" +
+        "Main hamesha sirf tera rahunga 🌹"
+      );
     }
   </script>
 
