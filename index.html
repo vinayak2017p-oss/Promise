@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise Day 💖</title>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding-top: 40px;
+    }
+
+    .card {
+      background: white;
+      color: #ff4d6d;
+      padding: 25px;
+      margin: auto;
+      width: 90%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: pop 1s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .dog {
+      width: 180px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    img.icon {
+      width: 90px;
+      margin: 5px;
+    }
+
+    button {
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    iframe {
+      display: none; /* hide YouTube player */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🎵 Ishqa Ve Chadeya (YouTube hidden player) -->
+  <iframe id="music"
+    src="https://www.youtube.com/embed/8mK6vZy8n9U?enablejsapi=1&autoplay=0&mute=0">
+  </iframe>
+
+  <div class="card">
+
+    <!-- 🐶 Cute dog like your image -->
+    <img class="dog"
+      src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=400"
+      alt="Cute dog with flower">
+
+    <h2>My Promise To Tannu 💍</h2>
+
+    <p>
+      “Vaada nahi, aadat ban jaayegi tu,<br>
+      Har din, har pal, meri zarurat ban jaayegi tu 💍❤️”
+    </p>
+
+    <img class="icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Red_rose.jpg/320px-Red_rose.jpg">
+    <img class="icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/240px-Love_Heart_SVG.svg.png">
+
+    <br><br>
+
+    <button onclick="playMusic()">Click for my promise 💖</button>
+
+  </div>
+
+  <script>
+    function playMusic() {
+      // play YouTube music
+      document.getElementById("music").src =
+        "https://www.youtube.com/embed/8mK6vZy8n9U?enablejsapi=1&autoplay=1";
+
+      alert(
+        "Main wada karta hoon muskuraane ka sabab banunga,\n" +
+        "Tere aansuon ka nahi,\n" +
+        "Promise Day par bas itna kehna hai,\n" +
+        "Main hamesha sirf tera rahunga 🌹"
+      );
+    }
+  </script>
+
+</body>
+</html>
